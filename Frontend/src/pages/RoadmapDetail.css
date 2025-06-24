@@ -1,0 +1,104 @@
+.roadmap-detail-page {
+  max-width: 60vw;
+  margin: 4vh auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f5f5;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  background-image: linear-gradient(to top left, #f8fbfe, #e6e0e0);
+}
+
+.roadmap-detail-page h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  border-bottom: 0.1rem solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.roadmap-info {
+  background-color: #cdd6f1;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  border: 0.1rem solid #dbe4ff;
+}
+
+.roadmap-info h3 {
+  font-size: 1.75rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.roadmap-info p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.comments-section {
+  margin-top: 4rem;
+background: linear-gradient(to right, #d4f0f9, #e1f4ff);  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease-in-out;
+}
+
+.comments-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+  border-bottom: 0.1rem solid #d1d5db;
+  padding-bottom: 0.4rem;
+}
+
+.add-comment-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.add-comment-form textarea {
+  resize: vertical;
+  min-height: 15vh;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 0.1rem solid #cbd5e1;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  background-color: #f9fafb;
+  transition: border 0.3s ease;
+}
+
+.add-comment-form textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.add-comment-form button {
+  align-self: flex-end;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-comment-form button:hover {
+  background-color: #2563eb;
+}
+
+.comment-reply {
+  margin-left: 5vw;
+  border-left: 0.2rem solid #e5e7eb;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}

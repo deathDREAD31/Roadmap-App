@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.roadmap-page {
+  max-width: 95vw;
+  margin: 5vh auto 8vh;
+  padding: 3vh 4vw 5vh;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  border-radius: 1.2rem;
+  box-shadow: 0 1.2rem 2.5rem rgba(0, 0, 0, 0.08);
+  animation: fadeInUp 0.8s ease;
+}
+
+.roadmap-page h2 {
+  text-align: center;
+  margin-bottom: 2.5vh;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem 2rem;
+  margin-bottom: 3vh;
+}
+
+.filters label {
+  font-weight: 600;
+  color: #232222;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  min-width: 140px;
+}
+
+.filters select {
+  margin-top: 0.4rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.filters select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.5);
+  outline: none;
+}
+
+.filters button {
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.8rem;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  min-width: 130px;
+  font-size: 0.95rem;
+}
+
+.filters button.sort-by-votes {
+  border: 1px solid #3f3e3e;
+  background: linear-gradient(to right, #2c67f2, #1cb8eb);
+}
+
+.filters button.logout-button {
+  background: linear-gradient(to right, #f953c6, #b91d73);
+  border: 1px solid #3f3e3e;
+  min-width: 110px;
+}
+
+.filters button.logout-button:hover {
+  background: #c0392b;
+}
+
+.filters button:hover {
+  background: linear-gradient(to right, #357abd, #7b11e4);
+  transform: scale(1.05);
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filters label,
+  .filters button {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .roadmap-page {
+    padding: 5vw 6vw;
+  }
+
+  .roadmap-page h2 {
+    font-size: 1.5rem;
+  }
+}

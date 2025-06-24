@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #4a90e2, #9013fe);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup-page {
+  max-width: 90vw;
+  width: 400px;
+  margin: 10vh auto;
+  padding: 5vh 5vw;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease;
+}
+
+.signup-page h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2.5vh;
+  font-size: 2rem;
+}
+
+.signup-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.signup-page label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.signup-page input {
+  padding: 0.8rem 1rem;
+  margin-top: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.signup-page input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0.4rem rgba(74, 144, 226, 0.5);
+  outline: none;
+}
+
+.signup-page button {
+  padding: 1rem;
+  background: linear-gradient(to right, #4a90e2, #9013fe);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  font-size: 1rem;
+}
+
+.signup-page button:hover {
+  transform: scale(1.02);
+  background: linear-gradient(to right, #357ABD, #7b11e4);
+}
+
+.signup-page p {
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.signup-page a {
+  color: #4a90e2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-page a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Small screen adjustments */
+@media (max-width: 480px) {
+  .signup-page {
+    width: 90%;
+    padding: 6vh 5vw;
+  }
+
+  .signup-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .signup-page button {
+    font-size: 0.95rem;
+  }
+}

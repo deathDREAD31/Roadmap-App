@@ -1,0 +1,133 @@
+.roadmap-item {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.6rem 1.8rem rgba(0, 0, 0, 0.08);
+  padding: 4vh 4vw;
+  margin: 4vh auto;
+  max-width: 90vw;
+  width: 700px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.roadmap-item:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.12);
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+.item-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.status {
+  padding: 0.4rem 1rem;
+  border-radius: 10rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* Status Color Themes */
+.status.inprogress {
+  background-color: #f39c12;
+}
+
+.status.completed {
+  background-color: #27ae60;
+}
+
+.status.interested {
+  background-color: #7f8c8d;
+}
+
+.status.pending {
+  background-color: #9b59b6;
+}
+
+.status.planned {
+  background-color: #3498db;
+}
+
+.roadmap-item p {
+  margin: 1vh 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2vh;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.item-footer button {
+  padding: 0.8rem 1.2rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1rem;
+}
+
+.item-footer button:disabled {
+  background-color: #b0c9f7;
+  cursor: not-allowed;
+}
+
+.item-footer button:hover:not(:disabled) {
+  background-color: #357abd;
+  transform: scale(1.03);
+}
+
+.details-link {
+  font-weight: bold;
+  color: #4a90e2;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 1rem;
+}
+
+.details-link:hover {
+  text-decoration: underline;
+  color: #357abd;
+}
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 600px) {
+  .roadmap-item {
+    width: 95%;
+    padding: 5vh 5vw;
+  }
+
+  .item-header,
+  .item-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-footer {
+    gap: 0.5rem;
+  }
+
+  .details-link,
+  .item-footer button {
+    width: 100%;
+    text-align: center;
+  }
+}
